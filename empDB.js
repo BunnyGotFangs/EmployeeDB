@@ -24,10 +24,10 @@
     event.preventDefault();
 
     // Get inputs
-    name = $("#name-info").val().trim();
-    role = $("#role-info").val().trim();
-    startDate = $("#date-info").val().trim();
-    monthlyRate = $("#rate-info").val().trim();
+    name = $("#name-input").val().trim();
+    role = $("#role-input").val().trim();
+    startDate = $("#date-input").val().trim();
+    monthlyRate = $("#rate-input").val().trim();
 
   database.ref().push({
 
@@ -39,8 +39,8 @@
 })
 
 
-  database.ref().on("value", function(snapshot) {
-  $("#displayed-data").text(snapshot.val().name + " | " + snapshot.val().role + " | " + snapshot.val().startDate)+ " | " + snapshot.val().monthlyRate)}
+  //database.ref().on("value", function(snapshot) {
+  //$("#displayed-data").text(snapshot.val().name + " | " + snapshot.val()//.role + " | " + snapshot.val().startDate)+ " | " + snapshot.val()//.monthlyRate)}
 
 
 
