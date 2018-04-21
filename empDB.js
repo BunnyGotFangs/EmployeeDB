@@ -40,12 +40,13 @@
 
 
   database.ref().on("value", function(snapshot) {
-  $("#displayed-data").text(snapshot.val().name + " | " + snapshot.val().role + " | " + snapshot.val().startDate)+ " | " + snapshot.val().monthlyRate); 
+  $("#displayed-data").text(snapshot.val().name + " | " + snapshot.val().role + " | " + snapshot.val().startDate)+ " | " + snapshot.val().monthlyRate)}
 
 
 
- database.ref().orderByChild("dateAdded").limitToLast(1).on("child_added", function(snapshot){
+ //database.ref().orderByChild("dateAdded").limitToLast(1).on("child_added", function(snapshot){
 
   // database.ref().orderByChild("dateAdded").limitToLast(1).on("child_added", function(snapshot){
   //  $("name-display").text(snapshot.val().name);
   // });
+  
